@@ -1,0 +1,83 @@
+{
+	"@@locale": "en",
+	"helloWorld": "Hello World!",
+	"@helloWorld": {
+		"type": "text",
+		"context": "HomePage",
+		"description": "Give as much context as possible here"
+	},
+	"greetingMessage": "Hello, {username}! Today is {date}.",
+	"@greetingMessage": {
+		"context": "Homepage:MainPanel",
+		"placeholders": {
+			"username": {
+				"type": "String",
+				"description": "Name of the user"
+			},
+			"date": {
+				"type": "String",
+				"description": "Current date"
+			}
+		}
+	},
+	"greeting": "{gender, select, male {Hello, Mr. {username}} female {Hello, Ms. {username}} other {Hello, {username}}}",
+	"@greeting": {
+		"context": "Homepage:MainPanel",
+		"placeholders": {
+			"gender": {
+				"type": "String",
+				"description": "Gender of the user"
+			},
+			"username": {
+				"type": "String",
+				"description": "Name of the user"
+			}
+		}
+	},
+	"emailCount": "{count, plural, =0 {You have no emails} =1 {You have one email} other {You have {count} emails}}",
+	"@emailCount": {
+		"context": "Homepage:MainPanel",
+		"placeholders": {
+			"count": {
+				"type": "num",
+				"description": "The number of emails"
+			}
+		}
+	},
+	"costText": "Your pending cost is {COST}",
+	"@costText": {
+		"type": "text",
+		"context": "Subscription:MainPanel",
+		"description": "balance statement.",
+		"placeholders": {
+			"COST": {
+				"type": "num",
+				"example": "$123.45",
+				"description": "cost presented with currency symbol"
+			}
+		}
+	},
+	"formattedCurrency": "Total: {value}",
+	"@formattedCurrency": {
+		"description": "Currency value formatted compactly",
+		"placeholders": {
+			"value": {
+				"type": "double",
+				"format": "decimalPattern",
+				"optionalParameters": {
+					"decimalDigits": 2
+				}
+			}
+		}
+	},
+	"formattedDate": "Date: $date",
+	"@formattedDate": {
+		"description": "Formatted date",
+		"placeholders": {
+			"date": {
+				"type": "DateTime",
+				"format": "yMd"
+			}
+		}
+	}
+}

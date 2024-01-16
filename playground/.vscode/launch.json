@@ -1,0 +1,49 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "playground",
+			"request": "launch",
+			"type": "dart"
+		},
+		{
+			"name": "simple shader",
+			"request": "launch",
+			"type": "dart",
+			"args": ["-t", "lib/shaders/simple.dart"]
+		},
+		{
+			"name": "advanced shader",
+			"request": "launch",
+			"type": "dart",
+			"args": ["-t", "lib/shaders/advanced.dart"]
+		},
+		{
+			"name": "custom painter",
+			"request": "launch",
+			"type": "dart",
+			"args": ["-t", "lib/custompainters/basic.dart"]
+		},
+		{
+			"name": "snowfall painter",
+			"request": "launch",
+			"type": "dart",
+			"args": ["-t", "lib/custompainters/snowfall.dart"]
+		},
+		{
+			"name": "playground (profile mode)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "profile"
+		},
+		{
+			"name": "playground (release mode)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "release"
+		}
+	]
+}

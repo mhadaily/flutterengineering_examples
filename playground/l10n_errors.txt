@@ -1,0 +1,37 @@
+{
+  "en_GB": [
+    "greetingMessage",
+    "greeting",
+    "emailCount",
+    "costText",
+    "formattedCurrency",
+    "formattedDate"
+  ],
+
+  "fa": [
+    "greetingMessage",
+    "greeting",
+    "emailCount",
+    "costText",
+    "formattedCurrency",
+    "formattedDate"
+  ],
+
+  "fr": [
+    "greetingMessage",
+    "greeting",
+    "emailCount",
+    "costText",
+    "formattedCurrency",
+    "formattedDate"
+  ],
+
+  "fr_CA": [
+    "greetingMessage",
+    "greeting",
+    "emailCount",
+    "costText",
+    "formattedCurrency",
+    "formattedDate"
+  ]
+}

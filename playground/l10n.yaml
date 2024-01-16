@@ -1,0 +1,11 @@
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+use-escaping: true
+synthetic-package: false
+output-dir: lib/l10n/generated
+nullable-getter: false
+required-resource-attributes: true
+gen-inputs-and-outputs-list: gen_l10n_inputs_and_outputs.json
+output-class: S
+untranslated-messages-file: l10n_errors.txt
