@@ -25,10 +25,15 @@ dependencies:
   provider: ^6.1.1
   flutter_riverpod: ^2.4.9
   flutter_bloc: ^8.1.3
+  go_router: ^13.2.2
+  route_annotations:
+    path: ./packages/route_annotations
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  route_generator:
+    path: ./packages/route_generator
   flutter_localizations:
     sdk: flutter
   intl: any

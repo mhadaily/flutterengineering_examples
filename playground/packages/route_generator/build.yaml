@@ -1,0 +1,23 @@
+builders:
+  routeLibraryConfigBuilder:
+    import: 'package:route_generator/builder.dart'
+    builder_factories: ['routeLibraryConfigBuilder']
+    build_extensions: { '.dart': ['.router.g.dart'] }
+    auto_apply: dependents
+    build_to: source
+
+  routeConfigBuilder:
+    import: 'package:route_generator/builder.dart'
+    builder_factories: ['routeConfigBuilder']
+    build_extensions: { '.dart': ['router.g.part'] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ['source_gen|combining_builder']
+
+  queryParamBuilder:
+    import: 'package:route_generator/builder.dart'
+    builder_factories: ['queryParamBuilder']
+    build_extensions: { '.dart': ['query_param.g.part'] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ['source_gen|combining_builder']
