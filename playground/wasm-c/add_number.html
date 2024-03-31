@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Add Numbers with Dart WasmGC</title>
+	</head>
+	<body>
+		<h1>Dart WasmGC demo</h1>
+		<p id="output"></p>
+		<script>
+			(async function () {
+				let dart2wasm_runtime;
+				let moduleInstance;
+				try {
+					const dartModulePromise = WebAssembly.compileStreaming(
+						fetch('/add_number.wasm')
+					);
+					const imports = {};
+					dart2wasm_runtime = await import('/add_number.mjs');
+					moduleInstance = await dart2wasm_runtime.instantiate(
+						dartModulePromise,
+						imports
+					);
+				} catch (exception) {
+					console.error(
+						`Failed to fetch & instantiate wasm module: ${exception}`
+					);
+				}
+
+				if (moduleInstance) {
+					try {
+						await dart2wasm_runtime.invoke(moduleInstance);
+					} catch (exception) {
+						console.error(`Exception while invoking test: ${exception}`);
+					}
+				}
+			})();
+		</script>
+	</body>
+</html>
