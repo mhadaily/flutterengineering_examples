@@ -28,6 +28,7 @@ dependencies:
   go_router: ^13.2.2
   route_annotations:
     path: ./packages/route_annotations
+  web: ^0.5.1
 
 dev_dependencies:
   flutter_test:
