@@ -29,6 +29,7 @@ dependencies:
   route_annotations:
     path: ./packages/route_annotations
   web: ^0.5.1
+  url_launcher: ^6.2.5
 
 dev_dependencies:
   flutter_test:
