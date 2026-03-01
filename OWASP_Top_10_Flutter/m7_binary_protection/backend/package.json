@@ -1,0 +1,14 @@
+{
+  "name": "m7-binary-protection-backend",
+  "version": "1.0.0",
+  "description": "Server-side license validation companion for the OWASP M7 Flutter example",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
