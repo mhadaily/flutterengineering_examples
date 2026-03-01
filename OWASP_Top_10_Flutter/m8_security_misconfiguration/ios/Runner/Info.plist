@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- GOOD: Hardened Info.plist for OWASP M8 demo.
+     ATS is NOT disabled; privacy usage descriptions are present. -->
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>M8 Security Misconfiguration</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>m8_security_misconfiguration</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+
+	<!-- ── App Transport Security ────────────────────────────────── -->
+	<!-- GOOD: ATS is NOT disabled.  Only domain-specific exceptions. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<!-- Do NOT add NSAllowsArbitraryLoads = true -->
+		<key>NSExceptionDomains</key>
+		<dict>
+			<!-- Example: a legacy endpoint that doesn't support HTTPS yet -->
+			<key>legacy-api.example.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSIncludesSubdomains</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+
+	<!-- ── Privacy Usage Descriptions ────────────────────────────── -->
+	<key>NSCameraUsageDescription</key>
+	<string>We need camera access to scan QR codes for secure login.</string>
+
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need photo library access to let you upload profile pictures.</string>
+
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to show nearby stores.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need background location to send you arrival notifications.</string>
+
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need microphone access for voice messages.</string>
+
+	<key>NSContactsUsageDescription</key>
+	<string>We need contacts access to help you find friends.</string>
+
+	<key>NSFaceIDUsageDescription</key>
+	<string>We use Face ID for quick and secure login.</string>
+
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>We use Bluetooth to connect to your fitness tracker.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>We use Bluetooth to connect to your fitness tracker.</string>
+</dict>
+</plist>

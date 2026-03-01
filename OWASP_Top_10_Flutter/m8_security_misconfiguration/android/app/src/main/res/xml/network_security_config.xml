@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GOOD: network_security_config.xml
+     From the article sections "Cleartext Traffic" and "Certificate Pinning". -->
+<network-security-config>
+
+  <!-- Default: no cleartext traffic allowed -->
+  <base-config cleartextTrafficPermitted="false">
+    <trust-anchors>
+      <certificates src="system" />
+    </trust-anchors>
+  </base-config>
+
+  <!-- Exception for local development only (emulator / localhost) -->
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">10.0.2.2</domain>
+    <domain includeSubdomains="true">localhost</domain>
+  </domain-config>
+
+  <!-- Certificate pinning for sensitive API endpoints -->
+  <domain-config>
+    <domain includeSubdomains="true">api.yourapp.com</domain>
+    <pin-set expiration="2027-01-01">
+      <!-- Primary certificate pin (replace with your real hash) -->
+      <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+      <!-- Backup pin (REQUIRED — rotate without outage) -->
+      <pin digest="SHA-256">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=</pin>
+    </pin-set>
+    <trust-anchors>
+      <certificates src="system" />
+    </trust-anchors>
+  </domain-config>
+
+  <!-- Debug-only: trust user-installed CAs (e.g. Charles Proxy / mitmproxy) -->
+  <debug-overrides>
+    <trust-anchors>
+      <certificates src="user" />
+    </trust-anchors>
+  </debug-overrides>
+
+</network-security-config>

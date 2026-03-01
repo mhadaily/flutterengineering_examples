@@ -1,0 +1,65 @@
+# Security Configuration Scan
+# From the article section "Automated Security Scanning".
+# Copy this to your repo's .github/workflows/ directory to automate checks.
+#
+# NOTE: Paths below assume a standard Flutter project at the repo root.
+#       Adjust if your project lives in a subdirectory.
+
+name: Security Configuration Scan
+
+on: [push, pull_request]
+
+jobs:
+  android-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check AndroidManifest.xml
+        run: |
+          MANIFEST="android/app/src/main/AndroidManifest.xml"
+
+          # Check for debuggable
+          if grep -q 'android:debuggable="true"' "$MANIFEST"; then
+            echo "ERROR: debuggable=true found in manifest"
+            exit 1
+          fi
+
+          # Check for allowBackup
+          if grep -q 'android:allowBackup="true"' "$MANIFEST"; then
+            echo "WARNING: allowBackup=true - ensure this is intentional"
+          fi
+
+          # Check for cleartext traffic
+          if grep -q 'android:usesCleartextTraffic="true"' "$MANIFEST"; then
+            echo "WARNING: Cleartext traffic allowed"
+          fi
+
+      - name: Check for hardcoded secrets
+        run: |
+          # Search for potential secrets in Dart files
+          if grep -rE "(api_key|apiKey|secret|password)\s*[:=]\s*['\"][^'\"]+['\"]" lib/; then
+            echo "WARNING: Potential hardcoded secrets found"
+            exit 1
+          fi
+
+  ios-security:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Info.plist
+        run: |
+          # Check for ATS disabled
+          if grep -A2 'NSAllowsArbitraryLoads' ios/Runner/Info.plist | grep -q 'true'; then
+            echo "ERROR: NSAllowsArbitraryLoads is true"
+            exit 1
+          fi
+
+      - name: Verify entitlements
+        run: |
+          # Check entitlements file exists and is properly configured
+          if [ -f ios/Runner/Runner.entitlements ]; then
+            echo "Entitlements file found"
+            cat ios/Runner/Runner.entitlements
+          fi

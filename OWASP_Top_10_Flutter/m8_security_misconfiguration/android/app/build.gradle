@@ -1,0 +1,48 @@
+// GOOD: build.gradle — release build type with security hardening.
+// From the article section "Debug Mode in Production".
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.m8_security_misconfiguration"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+
+    defaultConfig {
+        applicationId = "com.example.m8_security_misconfiguration"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            debuggable false          // Explicitly disabled
+            minifyEnabled true        // R8 / ProGuard code shrinking
+            shrinkResources true      // Remove unused resources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug // Replace with real signing in production
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
