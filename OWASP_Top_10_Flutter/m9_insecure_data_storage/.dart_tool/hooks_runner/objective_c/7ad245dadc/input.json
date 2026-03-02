@@ -1,0 +1,29 @@
+{
+  "assets": {},
+  "config": {
+    "build_asset_types": [
+      "code_assets/code"
+    ],
+    "extensions": {
+      "code_assets": {
+        "c_compiler": {
+          "ar": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar",
+          "cc": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang",
+          "ld": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
+        },
+        "link_mode_preference": "dynamic",
+        "macos": {
+          "target_version": 13
+        },
+        "target_architecture": "arm64",
+        "target_os": "macos"
+      }
+    },
+    "linking_enabled": false
+  },
+  "out_dir_shared": "/Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/",
+  "out_file": "/Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/objective_c/7ad245dadc/output.json",
+  "package_name": "objective_c",
+  "package_root": "/Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/",
+  "user_defines": {}
+}

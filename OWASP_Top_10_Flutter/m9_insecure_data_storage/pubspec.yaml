@@ -1,0 +1,50 @@
+name: m9_insecure_data_storage
+description:
+  'OWASP M9 Insecure Data Storage — Flutter examples from the blog article.
+  Demonstrates insecure vs secure storage patterns: SharedPreferences misuse,
+  unencrypted files/databases, credential logging, flutter_secure_storage usage,
+  encrypted databases (SQLCipher), AES-GCM file encryption, three-tier storage
+  sensitivity, secure logging with auto-redaction, clipboard security,
+  screenshot protection, secure memory handling, and root/jailbreak detection.'
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0-200.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Secure key-value storage (Keychain on iOS, EncryptedSharedPreferences on Android)
+  flutter_secure_storage: ^9.2.4
+
+  # Non-sensitive preferences (used in BAD examples to show the vulnerability)
+  shared_preferences: ^2.3.4
+
+  # File paths
+  path_provider: ^2.1.5
+
+  # SQLite (used in BAD example — unencrypted)
+  sqflite: ^2.4.1
+  path: ^1.9.1
+
+  # AES-GCM file encryption
+  encrypt: ^5.0.3
+
+  # Biometric authentication
+  local_auth: ^2.3.0
+
+  # Package info for runtime validation
+  package_info_plus: ^8.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

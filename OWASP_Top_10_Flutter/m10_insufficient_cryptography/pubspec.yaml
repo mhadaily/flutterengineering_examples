@@ -1,0 +1,40 @@
+name: m10_insufficient_cryptography
+description:
+  'OWASP M10 Insufficient Cryptography — Flutter examples from the blog article.
+  Demonstrates insecure vs secure cryptographic patterns: weak algorithms (DES,
+  ECB, MD5, SHA-1), hardcoded keys, static IVs, non-secure random, SHA-256 for
+  passwords, and their secure counterparts — AES-256-GCM, ChaCha20-Poly1305,
+  Argon2id, PBKDF2, Ed25519 signatures, HKDF key derivation, secure random
+  generation, constant-time comparison, and proper key management.'
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0-200.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Modern cryptography library (AES-GCM, ChaCha20, Argon2id, Ed25519, HKDF…)
+  cryptography: ^2.9.0
+
+  # Alternative encrypt package for simpler API (used in BAD examples for ECB/CBC demos)
+  encrypt: ^5.0.3
+
+  # General-purpose hashing (used in BAD examples to show SHA-256 weakness)
+  crypto: ^3.0.6
+
+  # Secure storage for keys (Keychain on iOS, EncryptedSharedPreferences on Android)
+  flutter_secure_storage: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

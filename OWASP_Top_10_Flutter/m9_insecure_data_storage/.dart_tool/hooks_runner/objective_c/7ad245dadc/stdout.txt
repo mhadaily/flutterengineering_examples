@@ -1,0 +1,65 @@
+Running `(cd /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/; TMPDIR=/var/folders/y_/fcm76qd56bb4djc7cdc4ycp00000gn/T/ PATH=/Users/mj/.local/bin:/Users/mj/.codeium/windsurf/bin:/usr/local/share/dotnet/dotnet:/opt/homebrew/bin/python3:/opt/homebrew/opt/openjdk/bin:/usr/local/share/dotnet:/Users/mj/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/mj/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/:/Users/mj/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/mj/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Users/mj/.local/bin:/Users/mj/.codeium/windsurf/bin:/usr/local/share/dotnet/dotnet:/opt/homebrew/bin/python3:/Users/mj/Library/pnpm:/opt/homebrew/opt/openjdk/bin:/Users/mj/.cargo/bin:/Users/mj/Library/Application Support/JetBrains/Toolbox/scripts:/Users/mj/.pub-cache/bin:/Users/mj/go/bin:/Users/mj/.yarn/bin:/Users/mj/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts:/Users/mj/Library/Application Support/JetBrains/Toolbox/scripts:/Users/mj/.pub-cache/bin:/Users/mj/go/bin HOME=/Users/mj /opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/cache/dart-sdk/bin/dart --packages=/Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/package_config.json /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/objective_c/7ad245dadc/hook.dill --config=/Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/objective_c/7ad245dadc/input.json )`.
+INFO: 2026-03-01 21:41:54.446525: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-03-01 21:41:54.460236: Running `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --version`.
+
+INFO: 2026-03-01 21:41:54.475167: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/include/dart_api_dl.c -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-03-01 21:41:54.475558: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c.c -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o
+
+INFO: 2026-03-01 21:41:54.475835: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/test/util.c -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o
+
+INFO: 2026-03-01 21:41:54.475971: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/input_stream_adapter.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-03-01 21:41:54.476168: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o
+
+INFO: 2026-03-01 21:41:54.476318: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/observer.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/observer.m.o
+
+INFO: 2026-03-01 21:41:54.476440: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/ns_number.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/ns_number.m.o
+
+INFO: 2026-03-01 21:41:54.476556: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/protocol.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o
+
+INFO: 2026-03-01 21:41:54.476782: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 -x objective-c -fobjc-arc -c /Users/mj/.pub-cache/hosted/pub.dev/objective_c-9.3.0/src/objective_c_bindings_generated.m -fpic -I src -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-03-01 21:41:54.517890: 
+INFO: 2026-03-01 21:41:54.517985: 
+INFO: 2026-03-01 21:41:54.518015: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-03-01 21:41:54.525949: 
+INFO: 2026-03-01 21:41:54.526065: 
+INFO: 2026-03-01 21:41:54.526096: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o
+
+INFO: 2026-03-01 21:41:54.539926: 
+INFO: 2026-03-01 21:41:54.539965: 
+INFO: 2026-03-01 21:41:54.539975: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o
+
+INFO: 2026-03-01 21:41:54.542374: 
+INFO: 2026-03-01 21:41:54.542403: 
+INFO: 2026-03-01 21:41:54.542414: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o
+
+INFO: 2026-03-01 21:41:54.544504: 
+INFO: 2026-03-01 21:41:54.544534: 
+INFO: 2026-03-01 21:41:54.544545: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/observer.m.o
+
+INFO: 2026-03-01 21:41:54.742798: 
+INFO: 2026-03-01 21:41:54.742840: 
+INFO: 2026-03-01 21:41:54.742851: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/ns_number.m.o
+
+INFO: 2026-03-01 21:41:54.745989: 
+INFO: 2026-03-01 21:41:54.746020: 
+INFO: 2026-03-01 21:41:54.746030: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o
+
+INFO: 2026-03-01 21:41:54.748927: 
+INFO: 2026-03-01 21:41:54.748956: 
+INFO: 2026-03-01 21:41:54.748966: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-03-01 21:41:54.767788: 
+INFO: 2026-03-01 21:41:54.767823: 
+INFO: 2026-03-01 21:41:54.767834: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-03-01 21:41:54.768159: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -target arm64-apple-darwin -mmacos-version-min=13 /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/include/dart_api_dl.c.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.c.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/test/util.c.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/input_stream_adapter.m.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c.m.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/observer.m.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/ns_number.m.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/protocol.m.o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/obj/src/objective_c_bindings_generated.m.o -o /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/objective_c.dylib
+
+INFO: 2026-03-01 21:41:54.805999: 
+INFO: 2026-03-01 21:41:54.806058: 
+INFO: 2026-03-01 21:41:54.806068: Generated /Users/mj/Projects/Majid/flutterengineering_examples/OWASP_Top_10_Flutter/m9_insecure_data_storage/.dart_tool/hooks_runner/shared/objective_c/build/7ad245dadc/objective_c.dylib
+
